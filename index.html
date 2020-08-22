@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Srisakdi:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        #page1 {
+            height: 100vh;
+            background-image: url("pink.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .headerpage1 {
+            width: 100%;
+            height: 70px;
+            background-color: rgb(221, 51, 80);
+            padding: 0, 20px;
+        }
+
+        .headerpage1 h2 {
+            line-height: 70px;
+            float: left;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .headerpage1 .menu {
+            list-style: none;
+            float: right;
+        }
+
+        .menu li {
+            display: inline-block;
+            line-height: 70px;
+
+        }
+
+        .menu li a {
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 0 20px;
+            transition: .4s;
+            color: white;
+        }
+
+        .show-btn,
+        .hide-btn {
+            font-size: 30px;
+            color: white;
+            line-height: 70px;
+            margin: 0px 15px;
+            display: none;
+        }
+
+        .show-btn {
+            float: right;
+        }
+
+        #chk {
+            position: absolute;
+            visibility: hidden;
+            z-index: -10;
+        }
+
+        .section1 {
+            font-size: 80px;
+            font-family: 'Bangers', cursive;
+            text-align: center;
+            margin-top: 35vh;
+            /* margin-left: 7vw; */
+            color: black;
+        }
+
+        .page1btn {
+            font-size: 40px;
+            background-color: pink;
+
+        }
+
+        @media (max-width: 820px) {
+            .section1 {
+                font-size: 50px;
+                font-family: 'Bangers', cursive;
+                text-align: center;
+                margin-top: 35vh;
+                /* margin-left: 7vw; */
+                color: black;
+            }
+
+            .show-btn,
+            .hide-btn {
+                display: block;
+            }
+
+            .menu li {
+                display: block;
+                padding: 20px 0;
+            }
+
+            .li a {
+                display: block;
+            }
+
+            .menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 50%;
+                height: 100vh;
+                background-color: black;
+                text-align: center;
+                transition: .7s;
+                line-height: normal;
+            }
+
+            .hide-btn {
+                position: absolute;
+                right: 5px;
+                top: 10px;
+            }
+
+            #chk:checked~.menu {
+                right: 0;
+            }
+        }
+
+        /* 
+        .container {
+            height: 100vh;
+        } */
+
+        #page2 {
+            display: block;
+            background-image: url("yellow.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .heading-page2 {
+            text-align: center;
+            color: white;
+            font-size: 7vh;
+        }
+
+        #service-1,
+        #service-2,
+        #service-3,
+        #service-4 {
+            margin-top: 4vh;
+            background-color: yellow;
+            width: 60vw;
+            font-size: 5vh;
+            font-family: 'Srisakdi', cursive;
+        }
+
+        #service-2 {
+            margin-left: 12vw;
+        }
+
+        #service-3 {
+            margin-left: 22vw;
+        }
+
+        #service-4 {
+            margin-left: 32vw;
+        }
+
+        @media screen and (min-width: 1055px) and (max-width: 1300px) {
+
+            #service-1,
+            #service-2,
+            #service-3,
+            #service-4 {
+                font-size: 4vh;
+                /* margin-top: 20px; */
+            }
+        }
+
+        @media screen and (min-width: 800px) and (max-width: 1055px) {
+
+            #service-1,
+            #service-2,
+            #service-3,
+            #service-4 {
+                font-size: 3.5vh;
+                width: 70vw;
+            }
+
+            #service-2 {
+                margin-left: 8vw;
+            }
+
+            #service-3 {
+                margin-left: 18vw;
+            }
+
+            #service-4 {
+                margin-left: 28vw;
+            }
+        }
+
+        @media screen and(min-width: 600px) and (max-width: 800px) {
+
+            #service-1,
+            #service-2,
+            #service-3,
+            #service-4 {
+                font-size: 3.3vh;
+                width: 75vw;
+            }
+
+            #service-2 {
+                margin-left: 6vw;
+            }
+
+            #service-3 {
+                margin-left: 16vw;
+            }
+
+            #service-4 {
+                margin-left: 26vw;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+
+            #service-1,
+            #service-2,
+            #service-3,
+            #service-4 {
+                font-size: 3.5vh;
+                width: 80vw;
+            }
+
+            #service-2 {
+                margin-left: 4vw;
+            }
+
+            #service-3 {
+                margin-left: 14vw;
+            }
+
+            #service-4 {
+                margin-left: 24vw;
+            }
+        }
+
+
+        #page-3 {
+            display: flex;
+            flex-flow: row wrap;
+            height: 100vh;
+
+            background-image: url("k.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .type {
+            width: 30vw;
+            height: 40vh;
+            display: flex;
+            flex-flow: row wrap;
+            border: 3px solid black;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+            border-radius: 50%;
+            margin: 1vh 1vw;
+            opacity: 0.85;
+            filter: contrast(150%);
+
+        }
+
+        .z {
+            background-color: white;
+            color: black;
+            align-self: center;
+            margin: auto;
+            font-size: 6vh;
+            font-family: 'Bangers', cursive;
+        }
+
+        #type-1 {
+            background-image: url("birthday-back.jpg");
+            /* background-attachment: fixed; */
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        #type-2 {
+            background-image: url("anniversary_back.jpg");
+            /* background-attachment: fixed; */
+            background-size: cover;
+            background-position: center;
+        }
+
+        #type-3 {
+            background-image: url("kids-back.jpg");
+            /* background-attachment: fixed; */
+            background-position: center;
+            background-size: cover;
+        }
+
+        #type-4 {
+            background-image: url();
+            /* background-attachment: fixed; */
+            background-size: cover;
+            background-position: center;
+        }
+
+        #type-5 {
+            background-image: url("eggless-back.jpg");
+            /* background-attachment: fixed; */
+            background-size: cover;
+            background-position: center;
+        }
+
+        #type-6 {
+            background-image: url("picture-back.jpg");
+            /* background-attachment: fixed; */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .type:hover {
+            box-shadow: -9px -9px black;
+            filter: contrast(150%);
+        }
+
+        @media screen and (max-width: 1650px) {
+            .type {
+                width: 28%;
+                height: 38vh;
+                margin: 2vh 2vw;
+            }
+
+            .z {
+                font-size: 70px;
+            }
+
+        }
+
+        @media screen and (max-width: 1410px) {
+            .type {
+                width: 30%;
+                height: 38vh;
+                margin: 2vh 2vw;
+
+            }
+
+            .z {
+                font-size: 66px;
+            }
+
+        }
+
+        @media screen and (max-width: 1250px) {
+            .type {
+                width: 37%;
+                height: 29vh;
+                margin: 0vh 6vw;
+
+            }
+
+            .z {
+                font-size: 70px;
+            }
+
+        }
+
+        @media screen and (max-width: 1010px) {
+            .type {
+                width: 38%;
+                height: 30vh;
+                margin: 0vh 5vw;
+
+            }
+
+            .z {
+                font-size: 55px;
+            }
+
+        }
+
+        @media screen and (max-width: 750px) {
+            .type {
+                width: 38%;
+                height: 27vh;
+                margin: 0vh 5vw;
+
+            }
+
+            .z {
+                font-size: 40px;
+            }
+
+        }
+
+        @media screen and (max-width: 580px) {
+            .type {
+                width: 44%;
+                height: 23vh;
+                margin: 0vh 2vw;
+
+            }
+
+            .z {
+                font-size: 29px;
+            }
+
+        }
+
+        @media screen and (max-width: 350px) {
+            .type {
+                width: 44%;
+                height: 23vh;
+                margin: 0vh 1vw;
+
+            }
+
+            .z {
+                font-size: 25px;
+            }
+
+        }
+
+
+        #page-4 {
+            display: flex;
+            flex-flow: row wrap;
+            height: 100vh;
+            background-image: url("k.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flavour {
+            width: 30vw;
+            height: 40vh;
+            display: flex;
+            flex-flow: row wrap;
+            border: 3px solid black;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+            /* border-radius: 50%; */
+            margin: 1vh 1vw;
+            opacity: 0.85;
+            filter: contrast(150%);
+
+        }
+
+        .z1 {
+            background-color: white;
+            color: black;
+            align-self: center;
+            margin: auto;
+            font-size: 6vh;
+            font-family: 'Bangers', cursive;
+        }
+
+        #flavour-1 {
+            background-image: url("birthday-back.jpg");
+            /* background-attachment: fixed; */
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        #flavour-2 {
+            background-image: url("anniversary_back.jpg");
+            /* background-attachment: fixed; */
+            background-size: cover;
+            background-position: center;
+        }
+
+        #flavour-3 {
+            background-image: url("kids-back.jpg");
+            /* background-attachment: fixed; */
+            background-position: center;
+            background-size: cover;
+        }
+
+        #flavour-4 {
+            background-image: url();
+            /* background-attachment: fixed; */
+            background-size: cover;
+            background-position: center;
+        }
+
+        #flavour-5 {
+            background-image: url("eggless-back.jpg");
+            /* background-attachment: fixed; */
+            background-size: cover;
+            background-position: center;
+        }
+
+        #flavour-6 {
+            background-image: url("picture-back.jpg");
+            /* background-attachment: fixed; */
+            background-size: cover;
+            background-position: center;
+        }
+        .flavour:hover{
+            box-shadow: -9px -9px black;
+            filter: contrast(150%);
+        }
+        @media screen and (max-width: 1650px) {
+            .flavour {
+                width: 28%;
+                height: 38vh;
+                margin: 2vh 2vw;
+            }
+
+            .z1 {
+                font-size: 70px;
+            }
+
+        }
+
+        @media screen and (max-width: 1410px) {
+            .flavour {
+                width: 30%;
+                height: 38vh;
+                margin: 2vh 2vw;
+
+            }
+
+            .z1 {
+                font-size: 66px;
+            }
+
+        }
+
+        @media screen and (max-width: 1250px) {
+            .flavour {
+                width: 37%;
+                height: 29vh;
+                margin: 0vh 6vw;
+
+            }
+
+            .z1 {
+                font-size: 70px;
+            }
+
+        }
+
+        @media screen and (max-width: 1010px) {
+            .flavour {
+                width: 38%;
+                height: 30vh;
+                margin: 0vh 5vw;
+
+            }
+
+            .z1 {
+                font-size: 55px;
+            }
+
+        }
+
+        @media screen and (max-width: 750px) {
+            .flavour {
+                width: 38%;
+                height: 27vh;
+                margin: 0vh 5vw;
+
+            }
+
+            .z1 {
+                font-size: 40px;
+            }
+
+        }
+
+        @media screen and (max-width: 580px) {
+            .flavour {
+                width: 44%;
+                height: 23vh;
+                margin: 0vh 2vw;
+
+            }
+
+            .z1 {
+                font-size: 29px;
+            }
+
+        }
+
+        @media screen and (max-width: 350px) {
+            .flavour {
+                width: 44%;
+                height: 23vh;
+                margin: 0vh 1vw;
+
+            }
+
+            .z1 {
+                font-size: 25px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="page1">
+        <div class="headerpage1">
+            <h2>Online Cake Delivery</h2>
+            <input type="checkbox" name="" id="chk">
+            <label for="chk" class="show-btn">
+                <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="">home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Types</a></li>
+                <li><a href="">Flavours</a></li>
+                <label for="chk" class="hide-btn">
+                    <i class="fa fa-times"></i>
+
+                </label>
+            </ul>
+        </div>
+        <div class="section1">
+            You've Tried The Rest <br> Now Try The Best <br>
+            <button class="page1btn">ORDER NOW</button>
+        </div>
+
+    </div>
+
+
+    <div class="container" id="page2">
+        <h1 class="heading-page2">Services</h1>
+        <div class="service" id="service-1">Get Cake At Your Doorstep </div>
+        <div class="service" id="service-2">Delivery Chargeable</div>
+        <div class="service" id="service-3">Get Cake In Just 3Hrs</div>
+        <div class="service" id="service-4">Order Anytime</div>
+        <!-- <div class="service" id="service-5"></div> -->
+
+
+
+    </div>
+
+
+
+    <div class="conatiner" id="page-3">
+        <div class="type" id="type-1"><a href="" class="z">Birthday-Cake</a></div>
+        <div class="type" id="type-2"><a href="" class="z">Wedding-Cake</a></div>
+        <div class="type" id="type-3"><a href="" class="z">Kids-Cake</a></div>
+        <div class="type" id="type-4"><a href="" class="z">Theme-Cake</a></div>
+        <div class="type" id="type-5"><a href="" class="z">Eggless-Cake</a></div>
+        <div class="type" id="type-6"><a href="" class="z">Picture-Cake</a></div>
+    </div>
+
+
+    <div class="conatiner" id="page-4">
+        <div class="flavour" id="flavour-1"><a href="" class="z1">Birthday-Cake</a></div>
+        <div class="flavour" id="flavour-2"><a href="" class="z1">Wedding-Cake</a></div>
+        <div class="flavour" id="flavour-3"><a href="" class="z1">Kids-Cake</a></div>
+        <div class="flavour" id="flavour-4"><a href="" class="z1">Theme-Cake</a></div>
+        <div class="flavour" id="flavour-5"><a href="" class="z1">Eggless-Cake</a></div>
+        <div class="flavour" id="flavour-6"><a href="" class="z1">Picture-Cake</a></div>
+    </div>
+
+</body>
+
+</html>
