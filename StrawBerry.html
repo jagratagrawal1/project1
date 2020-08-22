@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cake delivery</title>
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Yanone+Kaffeesatz:wght@500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&family=Yanone+Kaffeesatz:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <style>
+        #themepage {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: rgb(253, 198, 207);
+        }
+
+        .box {
+            /* border: 3px solid black; */
+            width: 23%;
+            height: 400px;
+            margin: 10px 8px;
+            box-sizing: border-box;
+            opacity: 1;
+            overflow: auto;
+            /* color: whitesmoke; */
+            background-color: whitesmoke;
+        }
+
+        .box:hover {
+            /* box-shadow: -7px -10px black; */
+            /* background-color: black; */
+            /* color: white; */
+            /* border: 1px solid white; */
+
+        }
+
+        .photo {
+            width: 100%;
+            height: 60%;
+        }
+
+        .cake_name {
+            font-size: 26px;
+            font-family: 'Permanent Marker', cursive;
+            /* padding: auto; */
+        }
+
+        .detail {
+            font-size: 30px;
+            /* font-family: 'Satisfy', cursive; */
+            /* font-family: 'Lobster Two', cursive; */
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .button {
+            border: 3px solid black;
+            width: 98%;
+            text-align: center;
+            background-color: yellow;
+        }
+
+        .OrderNow {
+            box-sizing: border-box;
+            font-size: 23px;
+            text-decoration: none;
+            font-family: 'Acme', sans-serif;
+
+        }
+
+        .chocolate {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* .logoimg{
+    float: left;
+} */
+        .intro {
+            display: block;
+            background-image: url("New folder/strawberry-logo-back.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 40vh;
+            overflow: auto;
+        }
+
+        .Blklogohead {
+            width: 50%;
+            height: 5%;
+            margin-left: 40%;
+        }
+        .Blklogohead h1{
+            color:rgb(241, 56, 87);
+        }
+        .footer{
+            background-color: rgb(196, 191, 191);
+        }
+        .footer h1{
+            color:rgb(241, 56, 87);
+        }
+
+        @media screen and (min-width:816px) and (max-width:1232px) {
+            .box {
+                width: 31%;
+                height: 384px;
+            }
+
+            .cake_name {
+                font-size: 23px;
+            }
+
+            .detail {
+                font-size: 29px;
+            }
+
+            .intro {
+                height: 25vh;
+            }
+        }
+
+        @media screen and (min-width:520px)and (max-width:816px) {
+            .box {
+                width: 30%;
+                height: 375px;
+            }
+
+            .cake_name {
+                font-size: 24px;
+            }
+
+            .detail {
+                font-size: 29px;
+            }
+
+            .intro {
+                height: 20vh;
+            }
+        }
+
+        @media screen and (min-width:340px)and (max-width:530px) {
+            .box {
+                width: 45%;
+                height: 340px;
+            }
+
+            .cake_name {
+                font-size: 19px;
+            }
+
+            .detail {
+                font-size: 29px;
+            }
+
+            .intro {
+                height: 15vh;
+            }
+
+            .intro h1 {
+                font-size: 20px;
+            }
+
+            .intro .theory {
+                font-size: 8px;
+            }
+        }
+
+        @media screen and (max-width:340px) {
+            .box {
+                width: 40%;
+                height: 220px;
+            }
+
+            .cake_name {
+                font-size: 11px;
+            }
+
+            .detail {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="intro" id="black-forest">
+        <div class="Blklogohead">
+            <h1>Strawberry Cake Online Delivery</h1>
+            <div class="theory">Our freshly baked strawberry cakes are perfect for the everyday occasions and special
+                ones too! Pick one for your dear ones and send it online for them to savor the heavenly flavors of a
+                Strawberry cake with great delight. Shop now and opt for Same Day or Midnight to deliver right on time!
+            </div>
+        </div>
+    </div>
+    <div class="container" id="themepage">
+        <div class="box" id="box-1">
+            <a href="" class="chocolate"> <img src="New folder/StrawBerry/chocoberry-twist-899.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Chocoberry Twist <br> Strawberry Cake </div>
+                <div class="detail"> Rs.899</div>
+            </a>
+        </div>
+        <div class="box" id="box-2">
+            <a href="" class="chocolate"></a><img src="New folder/StrawBerry/Grannys-Strawberry-599.jpg" alt=""
+                class="photo">
+            <div class="cake_name">Grannys <br> Strawberry Cake</div>
+            <div class="detail"> Price:599</div></a>
+        </div>
+        <div class="box" id="box-3">
+            <a href="" class="chocolate"> <img src="New folder/StrawBerry/special-pinkalicious-photo-1599.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Pinkalicious<br>Strawberry Cake </div>
+                <div class="detail"> Price:1599</div>
+            </a>
+        </div>
+        <div class="box" id="box-4">
+            <a href="" class="chocolate"> <img src="New folder/StrawBerry/strawberry-blast-699.jpg" alt=""
+                    class="photo">
+                <div class="cake_name"> Strawberry Blast <br> <br> </div>
+                <div class="detail"> Price:699</div>
+            </a>
+        </div>
+        <div class="box" id="box-5">
+            <a href="" class="chocolate"> <img src="New folder/StrawBerry/strberry-ecstasy-1599.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Ecstasy <br>Strawberry Cake<br></div>
+                <div class="detail"> Price:1599</div>
+            </a>
+        </div>
+        <div class="box" id="box-6">
+            <a href="" class="chocolate"> <img src="New folder/StrawBerry/strberry-vanilla-surprise-1899.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Surprise Cake <br> Strawberry,Vanilla </div>
+                <div class="detail">Price:1899</div>
+            </a>
+        </div>
+        <div class="box" id="box-7">
+            <a href="" class="chocolate"><img src="New folder/StrawBerry/Strwaberry-almond-899.jpg" alt=""
+                    class="photo">
+                <div class="cake_name"> Almond <br> Strawberry Cake </div>
+                <div class="detail"> Price:899</div>
+            </a>
+        </div>
+        <div class="box" id="box-8">
+            <a href="" class="chocolate"> <img src="New folder/StrawBerry/strwaberry-passion-1949.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Strawberry Passion<br><br></div>
+                <div class="detail">Price:1949</div>
+            </a>
+        </div>
+        <div class="box" id="box-9">
+            <a href="" class="chocolate"> <img src="New folder/StrawBerry/strwberry-vanilla-1899.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Two-in-One <br>Strawberry,Vanilla</div>
+                <div class="detail"> Price:1899</div>
+            </a>
+        </div>
+        <div class="box" id="box-10">
+            <a href="" class="chocolate"> <img src="New folder/StrawBerry/sweetheart-899.jpg" alt="" class="photo">
+                <div class="cake_name">SweetHeart <br>StrawBerry Cake </div>
+                <div class="detail"> Price:899</div>
+            </a>
+        </div>
+        <div class="footer">
+            <h1>Buy StrawBerry Cake By Cake Mania</h1>
+            Are your loved ones fond of fruits? Do they like the aromatic strawberries? If yes, then you must definitely
+            try our Strawberry cakes online delivery. Let your dear ones savor the richness and flavor of a strawberry
+            cake by choosing from among our eclectic range. For the ones who are 100% pure vegetarians, we have
+            delicious eggless strawberry cakes to cheer them up on a special occasion of theirs. Those who prefer less
+            of sugar, we have Sugar free strawberry cakes to make their taste buds dance. Our cakes are available in a
+            square shape, and round shape too! For a greater impact, you can always choose our Heart-shaped Strawberry
+            cakes online. Apart from these, you have the option to personalise your chosen cakes with a photo. Send
+            personalised photo strawberry cake to your precious ones and let them enjoy their celebratory time even
+            more! No matter what the occasion is, you can always send a heart-melting strawberry cake at their doorstep
+            with your warmest wishes. Place an online order of Strawberry cake and grace one of their occasions, be it a
+            birthday, anniversary, wedding celebration or any special occasion such as Valentine's Day, Mother's Day,
+            Christmas, New Year and what not!
+        </div>
+
+    </div>
+</body>
+
+</html>

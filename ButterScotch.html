@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cake delivery</title>
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Yanone+Kaffeesatz:wght@500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&family=Yanone+Kaffeesatz:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <style>
+        #themepage {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: rgb(252, 192, 125);
+        }
+
+        .box {
+            /* border: 3px solid black; */
+            width: 23%;
+            height: 400px;
+            margin: 10px 8px;
+            box-sizing: border-box;
+            opacity: 1;
+            overflow: auto;
+            background-color: whitesmoke;
+            /* background-color:rgb(252, 198, 136) ; */
+            box-shadow: 2px 2px black;
+        }
+
+        .box:hover {
+            /* box-shadow: -7px -10px black; */
+            /* background-color: black; */
+            /* color: white; */
+            /* border: 1px solid white; */
+
+        }
+
+        .photo {
+            width: 100%;
+            height: 60%;
+        }
+
+        .cake_name {
+            font-size: 26px;
+            font-family: 'Permanent Marker', cursive;
+            /* padding: auto; */
+        }
+
+        .detail {
+            font-size: 30px;
+            /* font-family: 'Satisfy', cursive; */
+            /* font-family: 'Lobster Two', cursive; */
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .button {
+            border: 3px solid black;
+            width: 98%;
+            text-align: center;
+            background-color: yellow;
+        }
+
+        .OrderNow {
+            box-sizing: border-box;
+            font-size: 23px;
+            text-decoration: none;
+            font-family: 'Acme', sans-serif;
+
+        }
+
+        .chocolate {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* .logoimg{
+    float: left;
+} */
+        .intro {
+            display: block;
+            background-image: url("New folder/butterscotch-back-logo.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 40vh;
+            overflow: auto;
+        }
+
+        .Blklogohead {
+            width: 50%;
+            height: 5%;
+            margin-left: 40%;
+        }
+        .Blklogohead h1{
+            color:rgb(241, 123, 55) ;
+        }
+        .footer{
+            background-color:  rgb(252, 220, 183);
+
+        }
+        .footer h1{
+            color: rgb(241, 123, 55);
+        }
+
+        @media screen and (min-width:816px) and (max-width:1232px) {
+            .box {
+                width: 31%;
+                height: 384px;
+            }
+
+            .cake_name {
+                font-size: 23px;
+            }
+
+            .detail {
+                font-size: 29px;
+            }
+
+            .intro {
+                height: 25vh;
+            }
+        }
+
+        @media screen and (min-width:520px)and (max-width:816px) {
+            .box {
+                width: 30%;
+                height: 375px;
+            }
+
+            .cake_name {
+                font-size: 24px;
+            }
+
+            .detail {
+                font-size: 29px;
+            }
+
+            .intro {
+                height: 20vh;
+            }
+        }
+
+        @media screen and (min-width:340px)and (max-width:530px) {
+            .box {
+                width: 45%;
+                height: 340px;
+            }
+
+            .cake_name {
+                font-size: 19px;
+            }
+
+            .detail {
+                font-size: 29px;
+            }
+
+            .intro {
+                height: 15vh;
+            }
+
+            .intro h1 {
+                font-size: 20px;
+            }
+
+            .intro .theory {
+                font-size: 8px;
+            }
+        }
+
+        @media screen and (max-width:340px) {
+            .box {
+                width: 40%;
+                height: 220px;
+            }
+
+            .cake_name {
+                font-size: 11px;
+            }
+
+            .detail {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="intro" id="black-forest">
+        <div class="Blklogohead">
+            <h1>Order Butterscotch Cakes Online</h1>
+            <div class="theory">Make all the occasions of your loved ones beautiful and endearing with our yummy and
+                delicious butterscotch cakes. With a crunchy taste and a luscious flavour, a butterscotch cake is an
+                ideal choice to make for your special ones. Believe us, this indulgence is worth it!
+            </div>
+        </div>
+    </div>
+    <div class="container" id="themepage">
+        <div class="box" id="box-1">
+            <a href="" class="chocolate"> <img src="New folder/butter-sctch/5-star-1545.jpg" alt="" class="photo">
+                <div class="cake_name">2 Tier <br> Chocolate Cake </div>
+                <div class="detail"> Price:3399</div>
+            </a>
+        </div>
+        <div class="box" id="box-2">
+            <a href="" class="chocolate"></a><img src="New folder/butter-sctch/berry-scotch-delight-799.jpg" alt=""
+                class="photo">
+            <div class="cake_name">Chocolate <br> truffle Cake</div>
+            <div class="detail"> Price:649</div></a>
+        </div>
+        <div class="box" id="box-3">
+            <a href="" class="chocolate"> <img src="New folder/butter-sctch/buttersctch-549.jpg" alt="" class="photo">
+                <div class="cake_name">Chocolate Cake <br>Pan Flavour </div>
+                <div class="detail"> Price:749</div>
+            </a>
+        </div>
+        <div class="box" id="box-4">
+            <a href="" class="chocolate"> <img src="New folder/butter-sctch/buttersctch-fantasy-845.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Delicious <br> Chocolate Cake </div>
+                <div class="detail"> Price:845</div>
+            </a>
+        </div>
+        <div class="box" id="box-5">
+            <a href="" class="chocolate"> <img src="New folder/butter-sctch/Buttery-buttersctch-699.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">German <br>Black Forest Cake<br></div>
+                <div class="detail"> Price:795</div>
+            </a>
+        </div>
+        <div class="box" id="box-6">
+            <a href="" class="chocolate"> <img src="New folder/butter-sctch/crunch-butter-679.jpg" alt="" class="photo">
+                <div class="cake_name">Ferdro rocher <br>Chocolate cake </div>
+                <div class="detail">Price:1199</div>
+            </a>
+        </div>
+        <div class="box" id="box-7">
+            <a href="" class="chocolate"><img src="New folder/butter-sctch/crunchy-buttersctch-679.jpg" alt=""
+                    class="photo">
+                <div class="cake_name"> Truffle <br> Chocolate Cake </div>
+                <div class="detail"> Price:1200</div>
+            </a>
+        </div>
+        <div class="box" id="box-8">
+            <a href="" class="chocolate"> <img src="New folder/butter-sctch/Exotic-buttersctch-775.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Cupid-Arrows <br>Chocolate Cake</div>
+                <div class="detail">Price:899</div>
+            </a>
+        </div>
+        <div class="footer">
+            <h1>Buy ButterScotch Cake From CakeMania</h1>
+            While cakes come in an endless range of flavors and toppings, some flavors have become instant classics, and
+            a butterscotch cake is certainly one of them! In fact, we've even gotten inventive with the times, and we
+            now have the likes of butterscotch caramel cake and the heavenly chocolate butterscotch cake as well! These
+            iterations of the butterscotch cake are as tempting and refreshing as they sound, and there's hardly anyone
+            who doesn't love its nutty taste!
+        </div>
+        <!-- <div class="box" id="box-9">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/Heart-shaped-choco-699.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Heart Shaped <br>Chocolate Cake</div>
+                <div class="detail"> Price:699</div>
+            </a>
+        </div>
+        <div class="box" id="box-10">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/Truffle-mania-cake-699.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Truffle Mania <br>Chocolate Cake </div>
+                <div class="detail"> Price:1200</div>
+            </a>
+        </div>
+        <div class="box" id="box-11">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/ultimate-chocolate-749.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Ultimate <br>Chocolate Cake </div>
+                <div class="detail"> Price:749</div>
+            </a>
+        </div> -->
+        <!-- <div class="box" id="box-12"> <img src="customize/pubg.jpg" alt="" class="photo">
+            <div class="cake_name">Barbie <br>Strawberry </div>
+            <div class="detail"> Weight: 2Kg <br> Price:1200</div>
+            <div class="button"><a href="" class="OrderNow">Order
+                    Now</a></div></div>
+        <div class="box" id="box-13"> <img src="customize/pubg2.jpg" alt="" class="photo">
+            <div class="cake_name">Barbie <br>Strawberry </div>
+            <div class="detail"> Weight: 2Kg <br> Price:1200</div>
+            <div class="button"><a href="" class="OrderNow">Order
+                    Now</a></div></div>
+        <div class="box" id="box-14"> <img src="customize/pubg3.jpg" alt="" class="photo">
+            <div class="cake_name">Barbie <br>Strawberry </div>
+            <div class="detail"> Weight: 2Kg <br> Price:1200</div>
+            <div class="button"><a href="" class="OrderNow">Order
+                    Now</a></div></div> -->
+
+    </div>
+</body>
+
+</html>

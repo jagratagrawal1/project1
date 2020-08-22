@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cake delivery</title>
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Yanone+Kaffeesatz:wght@500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&family=Yanone+Kaffeesatz:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <style>
+        #themepage {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: rgb(196, 191, 191);
+        }
+
+        .box {
+            /* border: 3px solid black; */
+            width: 23%;
+            height: 400px;
+            margin: 10px 8px;
+            box-sizing: border-box;
+            opacity: 1;
+            overflow: auto;
+            background-color: whitesmoke;
+        }
+
+        .box:hover {
+            /* box-shadow: -7px -10px black; */
+            /* background-color: black; */
+            /* color: white; */
+            /* border: 1px solid white; */
+
+        }
+
+        .photo {
+            width: 100%;
+            height: 60%;
+        }
+
+        .cake_name {
+            font-size: 26px;
+            font-family: 'Permanent Marker', cursive;
+            /* padding: auto; */
+        }
+
+        .detail {
+            font-size: 30px;
+            /* font-family: 'Satisfy', cursive; */
+            /* font-family: 'Lobster Two', cursive; */
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .button {
+            border: 3px solid black;
+            width: 98%;
+            text-align: center;
+            background-color: yellow;
+        }
+
+        .OrderNow {
+            box-sizing: border-box;
+            font-size: 23px;
+            text-decoration: none;
+            font-family: 'Acme', sans-serif;
+
+        }
+
+        .chocolate {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* .logoimg{
+    float: left;
+} */
+        .intro {
+            display: block;
+            background-image: url("New folder/vanilla-back-logo.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 40vh;
+            overflow: auto;
+        }
+
+        .Blklogohead {
+            width: 50%;
+            height: 5%;
+            margin-left: 40%;
+        }
+        .Blklogohead h1,.footer h1{
+            color: black ;
+        }
+        .footer{
+            background-color: rgb(177, 173, 173);
+
+        }
+
+        @media screen and (min-width:816px) and (max-width:1232px) {
+            .box {
+                width: 31%;
+                height: 384px;
+            }
+
+            .cake_name {
+                font-size: 23px;
+            }
+
+            .detail {
+                font-size: 29px;
+            }
+
+            .intro {
+                height: 25vh;
+            }
+        }
+
+        @media screen and (min-width:520px)and (max-width:816px) {
+            .box {
+                width: 30%;
+                height: 375px;
+            }
+
+            .cake_name {
+                font-size: 24px;
+            }
+
+            .detail {
+                font-size: 29px;
+            }
+
+            .intro {
+                height: 20vh;
+            }
+        }
+
+        @media screen and (min-width:340px)and (max-width:530px) {
+            .box {
+                width: 45%;
+                height: 340px;
+            }
+
+            .cake_name {
+                font-size: 19px;
+            }
+
+            .detail {
+                font-size: 29px;
+            }
+
+            .intro {
+                height: 15vh;
+            }
+
+            .intro h1 {
+                font-size: 20px;
+            }
+
+            .intro .theory {
+                font-size: 8px;
+            }
+        }
+
+        @media screen and (max-width:340px) {
+            .box {
+                width: 40%;
+                height: 220px;
+            }
+
+            .cake_name {
+                font-size: 11px;
+            }
+
+            .detail {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="intro" id="black-forest">
+        <div class="Blklogohead">
+            <h1>Fresh Vanilla Cake Midnight Delivery</h1>
+            <div class="theory">Buy and send all-inclusive range of classic as well as designer Vanilla Cakes online
+                anywhere in India. We offer the most soft, moist and fluffy Vanilla cakes online, perfect for all
+                occasions, be it birthdays, anniversaries, weddings or for any of their celebratory time.
+            </div>
+        </div>
+    </div>
+    <div class="container" id="themepage">
+        <div class="box" id="box-1">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/Designer-red-rose-899.jpg" alt="" class="photo">
+                <div class="cake_name">Designer Red Rose <br> Vanilla Cake </div>
+                <div class="detail"> Price:899</div>
+            </a>
+        </div>
+        <div class="box" id="box-2">
+            <a href="" class="chocolate"></a><img src="New folder/vanilla/kitkat-designer-1349.jpg" alt=""
+                class="photo">
+            <div class="cake_name">Kit-Kat<br> Vanilla Cake</div>
+            <div class="detail"> Price:1349</div></a>
+        </div>
+        <div class="box" id="box-3">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/kivi-punch-745.jpg" alt="" class="photo">
+                <div class="cake_name">Kivi Punch <br>Vanilla Cake </div>
+                <div class="detail"> Price:745</div>
+            </a>
+        </div>
+        <div class="box" id="box-4">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/minion-vanilla-1899.jpg" alt="" class="photo">
+                <div class="cake_name">Minon <br> Vanilla Cake </div>
+                <div class="detail"> Price:1899</div>
+            </a>
+        </div>
+        <div class="box" id="box-5">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/oreo-vanilla-999.jpg" alt="" class="photo">
+                <div class="cake_name">Oreo <br>Vanilla Cake<br></div>
+                <div class="detail"> Price:999</div>
+            </a>
+        </div>
+        <div class="box" id="box-6">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/Personal-vanilla-1049.jpg" alt="" class="photo">
+                <div class="cake_name">Personal <br>Vanilla cake </div>
+                <div class="detail">Price:1049</div>
+            </a>
+        </div>
+        <div class="box" id="box-7">
+            <a href="" class="chocolate"><img src="New folder/vanilla/teddy-vanilla-1799.jpg" alt="" class="photo">
+                <div class="cake_name"> Teddy <br> Vanilla Cake </div>
+                <div class="detail"> Price:1799</div>
+            </a>
+        </div>
+        <div class="box" id="box-8">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/vanila-celebration-699.jpg" alt="" class="photo">
+                <div class="cake_name">Celebration <br>Vanilla Cake</div>
+                <div class="detail">Price:699</div>
+            </a>
+        </div>
+        <div class="box" id="box-9">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/vanilaa-699.jpg" alt="" class="photo">
+                <div class="cake_name">Vanilla Cake <br><br></div>
+                <div class="detail"> Price:699</div>
+            </a>
+        </div>
+        <div class="box" id="box-10">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/vanilla-fruit-cake-749.jpg" alt="" class="photo">
+                <div class="cake_name">Vanilla Fruit Cake <br><br> </div>
+                <div class="detail"> Price:749</div>
+            </a>
+        </div>
+        <div class="box" id="box-11">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/vanilla-Inulgence-799.jpg" alt="" class="photo">
+                <div class="cake_name">Inuglgence<br>Vanilla Cake </div>
+                <div class="detail"> Price:799</div>
+            </a>
+        </div> -->
+        <div class="box" id="box-12"> 
+            <a href="" class="chocolate"><img src="New folder/vanilla/vanilla-mago-1899.jpg" alt="" class="photo">
+            <div class="cake_name">Mango Punch <br>vanilla Cake </div>
+            <div class="detail">  Price:1899</div></a>
+        </div>
+        <div class="box" id="box-13">
+            <a href="" class="chocolate"><img src="New folder/vanilla/vanilla-realm-749.jpg" alt="" class="photo">
+            <div class="cake_name">Mango Punch <br>Vanilla Cake </div>
+            <div class="detail"> Price:749</div></a>
+        </div>
+
+        <div class="footer">
+            <h1>Buy Vanilla Cake From Cake Mania</h1>
+            No occasion is complete without a celebration cake. And when you are looking for something classy yet
+            simple, Vanilla cakes are an elegant option to go for. Available in distinct shapes such as square or round,
+            you can always choose the one that best suits your loved one's choice and occasion. Heart-shaped Vanilla
+            cakes are also available with us for a hearty surprise. Send Vanilla cakes online anywhere in India with our
+            on-time, hassle-free delivery services.
+        </div>
+
+    </div>
+</body>
+
+</html>
