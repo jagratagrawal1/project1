@@ -29,7 +29,7 @@
         }
 
         .container {
-            width: 100%;
+            width: 100vw;
         }
 
         #page1 {
@@ -171,6 +171,26 @@
                 right: 0;
             }
         }
+        @media screen and (max-width:370px ) {
+            .headerpage1 h2{
+                font-size: 20px;
+            }
+            .section2 {
+                font-size: 70px;
+                /* font-family: 'Bangers', cursive; */
+                text-align: center;
+                margin-top: 25vh;
+            }
+
+            .section1 {
+                font-size: 40px;
+                /* font-family: 'Bangers', cursive; */
+                text-align: center;
+                margin-top: 5vh;
+                /* margin-left: 7vw; */
+                color: black;
+            }
+        }
 
         /* 
         .container {
@@ -178,13 +198,14 @@
         } */
 
         #page2 {
-            display: block;
+            display: inline-block;
             background-image: url("yellow.jpg");
             background-size: cover;
             background-position: center;
         }
 
         .heading-page2 {
+            background-color: yellow;
             text-align: center;
             color: rgb(245, 30, 66);
             font-size: 7vh;
@@ -667,9 +688,9 @@ scroll-behavior: smooth;
             </label>
             <ul class="menu">
                 <li><a href="">home</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Types</a></li>
-                <li><a href="">Flavours</a></li>
+                <li><a href="#page2">Services</a></li>
+                <li><a href="#page-3">Types</a></li>
+                <li><a href="#page-4">Flavours</a></li>
                 <label for="chk" class="hide-btn">
                     <i class="fa fa-times"></i>
 
@@ -700,12 +721,12 @@ scroll-behavior: smooth;
 
 
     <div class="conatiner" id="page-3">
-        <div class="type" id="type-1"><a href="" class="z">Birthday-Cake</a></div>
-        <div class="type" id="type-2"><a href="" class="z">Wedding-Cake</a></div>
-        <div class="type" id="type-3"><a href="" class="z">Kids-Cake</a></div>
-        <div class="type" id="type-4"><a href="" class="z">Theme-Cake</a></div>
-        <div class="type" id="type-5"><a href="" class="z">Eggless-Cake</a></div>
-        <div class="type" id="type-6"><a href="" class="z">Picture-Cake</a></div>
+        <div class="type" id="type-1"><a href="birthday.html" class="z">Birthday-Cake</a></div>
+        <div class="type" id="type-2"><a href="anniversary.html" class="z">Wedding-Cake</a></div>
+        <div class="type" id="type-3"><a href="kids.html" class="z">Kids-Cake</a></div>
+        <div class="type" id="type-4"><a href="themes.html" class="z">Theme-Cake</a></div>
+        <div class="type" id="type-5"><a href="Eggless.html" class="z">Eggless-Cake</a></div>
+        <div class="type" id="type-6"><a href="picture.html" class="z">Picture-Cake</a></div>
     </div>
 
 

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cake delivery</title>
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Yanone+Kaffeesatz:wght@500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&family=Yanone+Kaffeesatz:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <style>
+        #themepage {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: rgb(248, 165, 165);
+        }
+
+        .box {
+            /* border: 3px solid black; */
+            width: 23%;
+            height: 350px;
+            margin: 10px 8px;
+            box-sizing: border-box;
+            opacity: 1;
+            background-color: whitesmoke;
+            overflow: auto;
+        }
+
+        .box:hover {
+            /* box-shadow: -7px -10px black; */
+            /* background-color: black; */
+            /* color: white; */
+            /* border: 1px solid white; */
+
+        }
+
+        .photo {
+            width: 100%;
+            height: 80%;
+        }
+
+        .cake_name {
+            font-size: 23px;
+            font-family: 'Permanent Marker', cursive;
+            /* padding: auto; */
+        }
+
+        .detail {
+            font-size: 23px;
+            /* font-family: 'Satisfy', cursive; */
+            /* font-family: 'Lobster Two', cursive; */
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .button {
+            border: 3px solid black;
+            width: 98%;
+            text-align: center;
+            background-color: yellow;
+        }
+
+        .OrderNow {
+            box-sizing: border-box;
+            font-size: 23px;
+            text-decoration: none;
+            font-family: 'Acme', sans-serif;
+
+        }
+
+        .chocolate {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* .logoimg{
+    float: left;
+} */
+        .intro {
+            display: block;
+            background-image: url("New folder/birthday-back-logo.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 40vh;
+            overflow: auto;
+        }
+
+        .Blklogohead {
+            width: 50%;
+            height: 5%;
+            margin-left: 40%;
+        }
+
+        .Blklogohead h1 {
+            color: rgb(250, 140, 140)
+        }
+
+        .footer {
+            background-color: rgb(228, 224, 224);
+        }
+
+        .footer h1 {
+            color: rgb(252, 82, 82);
+        }
+
+        @media screen and (min-width:816px) and (max-width:1232px) {
+            .box {
+                width: 31%;
+                height: 345px;
+            }
+
+            .cake_name {
+                font-size: 22px;
+            }
+
+            .detail {
+                font-size: 23px;
+            }
+
+            .intro {
+                height: 25vh;
+            }
+        }
+
+        @media screen and (min-width:520px)and (max-width:816px) {
+            .box {
+                width: 30%;
+                height: 340px;
+            }
+
+            .cake_name {
+                font-size: 17px;
+            }
+
+            .detail {
+                font-size: 22px;
+            }
+
+            .intro {
+                height: 20vh;
+            }
+        }
+
+        @media screen and (min-width:340px)and (max-width:530px) {
+            .box {
+                width: 45%;
+                height: 330px;
+            }
+
+            .cake_name {
+                font-size: 14px;
+            }
+
+            .detail {
+                font-size: 16px;
+            }
+
+            .intro {
+                height: 15vh;
+            }
+
+            .intro h1 {
+                font-size: 20px;
+            }
+
+            .intro .theory {
+                font-size: 8px;
+            }
+        }
+
+        @media screen and (max-width:340px) {
+            .box {
+                width: 40%;
+                height: 220px;
+            }
+
+            .cake_name {
+                font-size: 12px;
+            }
+
+            .detail {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="intro" id="black-forest">
+        <div class="Blklogohead">
+            <h1>Send Birthday Cakes Online Delivery</h1>
+            <div class="theory">A birthday cannot be complete without a delicious birthday cake that can put a huge
+                smile on each and everyone's face. And, hence everyone deserves a mouthwatering birthday cake on his or
+                her birthday, MyFlowerTree comes with its same day and midnight cake delivery in India with the aid of
+                which you can now send birthday cakes online for your loved ones anywhere you want.
+            </div>
+        </div>
+    </div>
+    <div class="container" id="themepage">
+        <div class="box" id="box-1">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/kivi-punch-745.jpg" alt="" class="photo">
+                <div class="cake_name">Kivi Punch Vanilla Cake </div>
+                <div class="detail"> Price:745</div>
+            </a>
+        </div>
+        <div class="box" id="box-2">
+            <a href="" class="chocolate"> <img src="New folder/butter-sctch/Buttery-buttersctch-699.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Buttery Butter-Scotch Cake</div>
+                <div class="detail"> Price:699</div>
+            </a>
+        </div>
+        <div class="box" id="box-3">
+            <a href="" class="chocolate"><img src="New folder/blck-forest/Exotic-Black_forest-845.jpg" alt=""
+                    class="photo">
+                <div class="cake_name"> Exotic Black Forest Cake </div>
+                <div class="detail"> Price:845</div>
+            </a>
+        </div>
+        <div class="box" id="box-4">
+            <a href="" class="chocolate"></a><img src="New folder/butter-sctch/berry-scotch-delight-799.jpg" alt=""
+                class="photo">
+            <div class="cake_name">Butter Scotch Delight</div>
+            <div class="detail"> Price:649</div></a>
+        </div>
+        <div class="box" id="box-5">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/chco-pan-749.jpg" alt="" class="photo">
+                <div class="cake_name">Chocolate Pan Flavour </div>
+                <div class="detail"> Price:749</div>
+            </a>
+        </div>
+        <div class="box" id="box-6">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/minion-vanilla-1899.jpg" alt="" class="photo">
+                <div class="cake_name">Minon  Vanilla Cake </div>
+                <div class="detail"> Price:1899</div>
+            </a>
+        </div>
+        <div class="box" id="box-7">
+            <a href="" class="chocolate"><img src="New folder/butter-sctch/crunchy-buttersctch-679.jpg" alt=""
+                    class="photo">
+                <div class="cake_name"> Crunchy Butter-Scotch Cake </div>
+                <div class="detail"> Price:679</div>
+            </a>
+        </div>
+        <div class="box" id="box-8">
+            <a href="" class="chocolate"> <img src="New folder/Eggless/rich-choco-749.jpg" alt="" class="photo">
+                <div class="cake_name">Rich Chocolate Eggless cake </div>
+                <div class="detail">Price:749</div>
+            </a>
+        </div>
+        <div class="box" id="box-9">
+            <a href="" class="chocolate"><img src="New folder/StrawBerry/Strwaberry-almond-899.jpg" alt=""
+                    class="photo">
+                <div class="cake_name"> Almond Strawberry Cake </div>
+                <div class="detail"> Price:899</div>
+            </a>
+        </div>
+        <div class="box" id="box-10">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/vanila-celebration-699.jpg" alt="" class="photo">
+                <div class="cake_name">Celebration Vanilla Cake</div>
+                <div class="detail">Price:699</div>
+            </a>
+        </div>
+        <div class="box" id="box-11">
+            <a href="" class="chocolate"> <img src="New folder/butter-sctch/Exotic-buttersctch-775.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Exotic Butter-Scotch Cake</div>
+                <div class="detail">Price:775</div>
+            </a>
+        </div>
+        <div class="box" id="box-12">
+            <a href="" class="chocolate"> <img src="New folder/blck-forest/german-black-for-795.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">German Black Forest Cake</div>
+                <div class="detail">Price:899</div>
+            </a>
+        </div>
+        <div class="box" id="box-13">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/cupids-arrow-899.jpg" alt="" class="photo">
+                <div class="cake_name">Cupid-Arrows Chocolate Cake</div>
+                <div class="detail">Price:899</div>
+            </a>
+        </div>
+        <div class="box" id="box-14">
+            <a href="" class="chocolate"> <img src="New folder/butter-sctch/crunch-butter-679.jpg" alt="" class="photo">
+                <div class="cake_name">Crunchy Butter-Scotch cake </div>
+                <div class="detail">Price:699</div>
+            </a>
+        </div>
+        <div class="box" id="box-15">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/vanilla-Inulgence-799.jpg" alt="" class="photo">
+                <div class="cake_name">Inuglgence Vanilla Cake </div>
+                <div class="detail"> Price:799</div>
+            </a>
+        </div>
+        <div class="box" id="box-16">
+            <a href="" class="chocolate"> <img src="New folder/blck-forest/Zesty-blc-for-699.jpg" alt="" class="photo">
+                <div class="cake_name">Zesty Black Forest Cake </div>
+                <div class="detail"> Price:699</div>
+            </a>
+        </div>
+        <div class="box" id="box-17">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/ultimate-chocolate-749.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Ultimate Chocolate Cake </div>
+                <div class="detail"> Price:749</div>
+            </a>
+        </div>
+        <div class="box" id="box-18">
+            <a href="" class="chocolate"> <img src="New folder/StrawBerry/chocoberry-twist-899.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Chocoberry Twist Strawberry Cake </div>
+                <div class="detail"> Rs.899</div>
+            </a>
+        </div>
+        <div class="box" id="box-19">
+            <a href="" class="chocolate"> <img src="New folder/Eggless/fruit-1349.jpg" alt="" class="photo">
+                <div class="cake_name">Eggless Fruit Cake </div>
+                <div class="detail"> Price:1349</div>
+            </a>
+        </div>
+        <div class="box" id="box-20">
+            <a href="" class="chocolate"> <img src="New folder/StrawBerry/strberry-ecstasy-1599.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Ecstasy Strawberry Cake<br></div>
+                <div class="detail"> Price:1599</div>
+            </a>
+        </div>
+
+
+
+        <div class="footer">
+            <h1>Buy BirthDay Cake From Cake Mania</h1>
+            Planning a perfect birthday party can give you sleepless nights and arranging for the ideal cake is one of
+            the most daunting tasks. But, we can help. You can find a desirable birthday cake as per the theme of your
+            birthday party here and level up the happiness for your birthday celebration.
+        </div>
+    </div>
+</body>
+
+</html>
