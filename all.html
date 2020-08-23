@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cake delivery</title>
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Yanone+Kaffeesatz:wght@500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&family=Yanone+Kaffeesatz:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <style>
+        #themepage {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: rgb(209, 205, 205);
+        }
+
+        .box {
+            /* border: 3px solid black; */
+            width: 23%;
+            height: 350px;
+            margin: 10px 8px;
+            box-sizing: border-box;
+            opacity: 1;
+            overflow: auto;
+            background-color: whitesmoke;
+        }
+
+        .box:hover {
+            /* box-shadow: -7px -10px black; */
+            /* background-color: black; */
+            /* color: white; */
+            /* border: 1px solid white; */
+
+        }
+
+        .photo {
+            width: 100%;
+            height: 80%;
+        }
+
+        .cake_name {
+            font-size: 23px;
+            font-family: 'Permanent Marker', cursive;
+            /* padding: auto; */
+        }
+
+        .detail {
+            font-size: 23px;
+            /* font-family: 'Satisfy', cursive; */
+            /* font-family: 'Lobster Two', cursive; */
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .button {
+            border: 3px solid black;
+            width: 98%;
+            text-align: center;
+            background-color: yellow;
+        }
+
+        .OrderNow {
+            box-sizing: border-box;
+            font-size: 23px;
+            text-decoration: none;
+            font-family: 'Acme', sans-serif;
+
+        }
+
+        .chocolate {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* .logoimg{
+    float: left;
+} */
+        .intro {
+            display: block;
+            background-image: url("New folder/all-back-logo.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 40vh;
+            overflow: auto;
+        }
+
+        .Blklogohead {
+            width: 50%;
+            height: 5%;
+            margin-left: 40%;
+        }
+
+        .Blklogohead h1,
+        .footer h1 {
+            color: brown;
+        }
+
+        .footer {
+            background-color: rgb(196, 191, 191);
+        }
+
+        @media screen and (min-width:816px) and (max-width:1232px) {
+            .box {
+                width: 31%;
+                height: 345px;
+            }
+
+            .cake_name {
+                font-size: 22px;
+            }
+
+            .detail {
+                font-size: 25px;
+            }
+
+            .intro {
+                height: 25vh;
+            }
+        }
+
+        @media screen and (min-width:520px)and (max-width:816px) {
+            .box {
+                width: 30%;
+                height: 340px;
+            }
+
+            .cake_name {
+                font-size: 17px;
+            }
+
+            .detail {
+                font-size: 22px;
+            }
+
+            .intro {
+                height: 20vh;
+            }
+        }
+
+        @media screen and (min-width:340px)and (max-width:530px) {
+            .box {
+                width: 45%;
+                height: 330px;
+            }
+
+            .cake_name {
+                font-size: 14px;
+            }
+
+            .detail {
+                font-size: 16px;
+            }
+
+            .intro {
+                height: 15vh;
+            }
+
+            .intro h1 {
+                font-size: 20px;
+            }
+
+            .intro .theory {
+                font-size: 8px;
+            }
+        }
+
+        @media screen and (max-width:340px) {
+            .box {
+                width: 40%;
+                height: 220px;
+            }
+
+            .cake_name {
+                font-size: 11px;
+            }
+
+            .detail {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="intro" id="black-forest">
+        <div class="Blklogohead">
+            <h1>Online Cake Delivery</h1>
+            <div class="theory">Looking for Online Cake Delivery? Deliver Fresh Baked cakes online anywhere anytime from
+                our online cake delivery service, We love to add a little extra magic to your special occasions with
+                express delivery of these celebratory must-have Cakes at your doorstep.
+            </div>
+        </div>
+    </div>
+    <div class="container" id="themepage">
+        <div class="box" id="box-1">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/Designer-red-rose-899.jpg" alt="" class="photo">
+                <div class="cake_name">Designer Red Rose Vanilla Cake </div>
+                <div class="detail"> Price:899</div>
+            </a>
+        </div>
+        <div class="box" id="box-2">
+            <a href="" class="chocolate"></a><img src="New folder/vanilla/kitkat-designer-1349.jpg" alt=""
+                class="photo">
+            <div class="cake_name">Kit-Kat Vanilla Cake</div>
+            <div class="detail"> Price:1349</div></a>
+        </div>
+        <div class="box" id="box-3">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/2-tier-chocolate-cake-3399.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">2 Tier Chocolate Cake </div>
+                <div class="detail"> Price:3399</div>
+            </a>
+        </div>
+        <div class="box" id="box-4">
+            <a href="" class="chocolate"></a><img src="New folder/chocolate/captivating-choco-truffle-649.jpg" alt=""
+                class="photo">
+            <div class="cake_name">Chocolate  truffle Cake</div>
+            <div class="detail"> Price:649</div></a>
+        </div>
+        <div class="box" id="box-5">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/chco-pan-749.jpg" alt="" class="photo">
+                <div class="cake_name">Chocolate Pan Flavour </div>
+                <div class="detail"> Price:749</div>
+            </a>
+        </div>
+        <div class="box" id="box-6">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/chocolate-599.jpg" alt="" class="photo">
+                <div class="cake_name">Delicious  Chocolate Cake </div>
+                <div class="detail"> Price:845</div>
+            </a>
+        </div>
+        <div class="box" id="box-7">
+            <a href="" class="chocolate"><img src="New folder/themes/jack-daniel-liquior-999.jpg" alt="" class="photo">
+                <div class="cake_name"> Jack Daniel Liquior </div>
+                <div class="detail"> Price:1200</div>
+            </a>
+        </div>
+        <div class="box" id="box-8">
+            <a href="" class="chocolate"> <img src="New folder/themes/jimmychoo-3999.jpg" alt="" class="photo">
+                <div class="cake_name">Jimmy-Choo</div>
+                <div class="detail">Price:3999</div>
+            </a>
+        </div>
+        <div class="box" id="box-9">
+            <a href="" class="chocolate"> <img src="New folder/themes/ludo-theme-999.jpg" alt="" class="photo">
+                <div class="cake_name">Ludo Theme</div>
+                <div class="detail"> Price:999</div>
+            </a>
+        </div>
+        <div class="box" id="box-10">
+            <a href="" class="chocolate"> <img src="New folder/themes/makeup-2049.jpg" alt="" class="photo">
+                <div class="cake_name">Make-Up Theme </div>
+                <div class="detail"> Price:2049</div>
+            </a>
+        </div>
+        <div class="box" id="box-11">
+            <a href="" class="chocolate"> <img src="New folder/themes/makeup-2849.jpg" alt="" class="photo">
+                <div class="cake_name">Make-Up Theme </div>
+                <div class="detail"> Price:2849</div>
+            </a>
+        </div>
+        <div class="box" id="box-12">
+            <a href="" class="chocolate"> <img src="New folder/themes/mom-999.jpg" alt="" class="photo">
+                <div class="cake_name">Mom </div>
+                <div class="detail"> Price:949</div>
+            </a>
+        </div>
+        <div class="box" id="box-13">
+            <a href="" class="chocolate"> <img src="New folder/themes/proposal-theme-2045.jpg" alt="" class="photo">
+                <div class="cake_name">Proposal Theme </div>
+                <div class="detail"> Price:2099</div>
+            </a>
+        </div>
+        <div class="box" id="box-14">
+            <a href="" class="chocolate"> <img src="New folder/themes/pubg-battle-3650.jpeg" alt="" class="photo">
+                <div class="cake_name">Pubg Battle</div>
+                <div class="detail"> Price:2849</div>
+            </a>
+        </div>
+        <div class="box" id="box-15">
+            <a href="" class="chocolate"> <img src="New folder/themes/winter-has-come-2045.jpg" alt="" class="photo">
+                <div class="cake_name">Winter Has Come </div>
+                <div class="detail"> Price:2049</div>
+            </a>
+        </div>
+        <!-- <div class="box" id="box-5">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/chco-pan-749.jpg" alt="" class="photo">
+                <div class="cake_name">German Black Forest Cake<br></div>
+                <div class="detail"> Price:795</div>
+            </a>
+        </div> -->
+        <div class="box" id="box-6">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/kivi-punch-745.jpg" alt="" class="photo">
+                <div class="cake_name">Kivi Punch Vanilla Cake </div>
+                <div class="detail"> Price:745</div>
+            </a>
+        </div>
+        <div class="box" id="box-17">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/minion-vanilla-1899.jpg" alt="" class="photo">
+                <div class="cake_name">Minon  Vanilla Cake </div>
+                <div class="detail"> Price:1899</div>
+            </a>
+        </div>
+        <div class="box" id="box-18">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/chocolate-rocher-1199.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">rocher Chocolate cake </div>
+                <div class="detail">Price:1199</div>
+            </a>
+        </div>
+        <div class="box" id="box-19">
+            <a href="" class="chocolate"> <img src="New folder/themes/fitness-themed-1899.jpg" alt="" class="photo">
+                <div class="cake_name">Fitness Theme </div>
+                <div class="detail"> Price:1845</div>
+            </a>
+        </div>
+        <div class="box" id="box-20">
+            <a href="" class="chocolate"> <img src="New folder/themes/gym-1899.jpg" alt="" class="photo">
+                <div class="cake_name">Gym Theme<br></div>
+                <div class="detail"> Price:1895</div>
+            </a>
+        </div>
+        <div class="box" id="box-21">
+            <a href="" class="chocolate"> <img src="New folder/themes/Husband-Gym-1899.jpg" alt="" class="photo">
+                <div class="cake_name">husband Gym Theme </div>
+                <div class="detail">Price:1899</div>
+            </a>
+        </div>
+        <div class="box" id="box-22">
+            <a href="" class="chocolate"><img src="New folder/chocolate/chocolate-truffle-549.jpg" alt="" class="photo">
+                <div class="cake_name"> Truffle Chocolate Cake </div>
+                <div class="detail"> Price:1200</div>
+            </a>
+        </div>
+        <div class="box" id="box-23">
+            <a href="" class="chocolate"> <img src="New folder/picture/imperfectly-perfect.jpg" alt="" class="photo">
+                <div class="cake_name">Imperfectly Perfect </div>
+                <div class="detail"> Price:2399</div>
+            </a>
+        </div>
+        <div class="box" id="box-24">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/cupids-arrow-899.jpg" alt="" class="photo">
+                <div class="cake_name">Cupid-Arrows Chocolate Cake</div>
+                <div class="detail">Price:899</div>
+            </a>
+        </div>
+        <div class="box" id="box-25">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/oreo-vanilla-999.jpg" alt="" class="photo">
+                <div class="cake_name">Oreo Vanilla Cake</div>
+                <div class="detail"> Price:999</div>
+            </a>
+        </div>
+        <div class="box" id="box-26">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/Personal-vanilla-1049.jpg" alt="" class="photo">
+                <div class="cake_name">Personal Vanilla cake </div>
+                <div class="detail">Price:1049</div>
+            </a>
+        </div>
+        <div class="box" id="box-27">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/Heart-shaped-choco-699.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Heart Shaped Chocolate Cake</div>
+                <div class="detail"> Price:699</div>
+            </a>
+        </div>
+        <div class="box" id="box-28">
+            <a href="" class="chocolate"></a><img src="New folder/picture/little-hearts-1499.jpg" alt="" class="photo">
+            <div class="cake_name">Little-Hearts</div>
+            <div class="detail"> Price:649</div></a>
+        </div>
+        <div class="box" id="box-29">
+            <a href="" class="chocolate"> <img src="New folder/picture/truffle-sensation-1699.jpg" alt="" class="photo">
+                <div class="cake_name">Truffle-Sensation </div>
+                <div class="detail">Price:1199</div>
+            </a>
+        </div>
+        <div class="box" id="box-30">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/Truffle-mania-cake-699.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Truffle Mania Chocolate Cake </div>
+                <div class="detail"> Price:1200</div>
+            </a>
+        </div>
+        <div class="box" id="box-31">
+            <a href="" class="chocolate"><img src="New folder/vanilla/teddy-vanilla-1799.jpg" alt="" class="photo">
+                <div class="cake_name"> Teddy  Vanilla Cake </div>
+                <div class="detail"> Price:1799</div>
+            </a>
+        </div>
+        <div class="box" id="box-32">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/vanila-celebration-699.jpg" alt="" class="photo">
+                <div class="cake_name">Celebration Vanilla Cake</div>
+                <div class="detail">Price:699</div>
+            </a>
+        </div>
+        <div class="box" id="box-33">
+            <a href="" class="chocolate"><img src="New folder/picture/vanilla-esctasy-1549.jpg" alt="" class="photo">
+                <div class="cake_name"> Vanilla Cake </div>
+                <div class="detail"> Price:1549</div>
+            </a>
+        </div>
+        <div class="box" id="box-34">
+            <a href="" class="chocolate"> <img src="New folder/themes/black-angry-bird-1969.jpg" alt="" class="photo">
+                <div class="cake_name">Black Angry Bird </div>
+                <div class="detail"> Price:1699</div>
+            </a>
+        </div>
+        <div class="box" id="box-35">
+            <a href="" class="chocolate"></a><img src="New folder/themes/camera-2650.jpg" alt="" class="photo">
+            <div class="cake_name">Camera</div>
+            <div class="detail"> Price:2649</div></a>
+        </div>
+        <div class="box" id="box-36">
+            <a href="" class="chocolate"> <img src="New folder/themes/cricket-1949.jpg" alt="" class="photo">
+                <div class="cake_name">Cricket Theme </div>
+                <div class="detail"> Price:1949</div>
+            </a>
+        </div>
+        <div class="box" id="box-37">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/vanilla-Inulgence-799.jpg" alt="" class="photo">
+                <div class="cake_name">Inuglgence Vanilla Cake </div>
+                <div class="detail"> Price:799</div>
+            </a>
+        </div> 
+        <div class="box" id="box-38"> 
+            <a href="" class="chocolate"><img src="New folder/vanilla/vanilla-mago-1899.jpg" alt="" class="photo">
+            <div class="cake_name">Mango Punch vanilla Cake </div>
+            <div class="detail">  Price:1899</div></a>
+        </div>
+        <div class="box" id="box-39">
+            <a href="" class="chocolate"><img src="New folder/vanilla/vanilla-realm-749.jpg" alt="" class="photo">
+            <div class="cake_name">Mango Punch Vanilla Cake </div>
+            <div class="detail"> Price:749</div></a>
+        </div>
+        <div class="box" id="box-40">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/ultimate-chocolate-749.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Ultimate Chocolate Cake </div>
+                <div class="detail"> Price:749</div>
+            </a>
+        </div> 
+
+        <div class="box" id="box-41">
+            <a href="" class="chocolate"> <img src="New folder/chocolate/ultimate-chocolate-749.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Ultimate Chocolate Cake </div>
+                <div class="detail"> Price:749</div>
+            </a>
+        </div>
+        <div class="box" id="box-42">
+            <a href="" class="chocolate"> <img src="New folder/picture/Photo-printedTruffle-1449.jpg" alt=""
+                    class="photo">
+                <div class="cake_name">Printed Truffle</div>
+                <div class="detail"> Price:845</div>
+            </a>
+        </div>
+        <div class="box" id="box-43">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/vanilaa-699.jpg" alt="" class="photo">
+                <div class="cake_name">Vanilla Cake</div>
+                <div class="detail"> Price:699</div>
+            </a>
+        </div>
+        <div class="box" id="box-44">
+            <a href="" class="chocolate"> <img src="New folder/vanilla/vanilla-fruit-cake-749.jpg" alt="" class="photo">
+                <div class="cake_name">Vanilla Fruit Cake  </div>
+                <div class="detail"> Price:749</div>
+            </a>
+        </div>
+        <div class="footer">
+            <h1>Buy Cake From Cake Mania</h1>
+            A celebration is incomplete without a scrumptious cake! Eating a cake is an experience that makes you and
+            your loved ones rejoice and enjoy every second of the celebration. Now, you can ensure that every occasion
+            is memorable with these incredible treats available for instant cake delivery online at Cake Mania. We
+            promise you a feeling that you would have never experienced before along with the sweetest smiles of your
+            loved ones. Our cakes are more than just edibles; they are a perfect creation with emotions attached to
+            them, and happiness filled within.
+
+        </div>
+    </div>
+</body>
+
+</html>
